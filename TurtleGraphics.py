@@ -16,49 +16,49 @@ def drawPolygon(pent, sides, size):
         pent.forward(size)
         pent.right (360/sides)
 
-#def fillCorner(greg, corner):
-#    drawSquare(greg, 100)
-#    if corner == 1:
-#        greg.begin_fill()
-#        drawSquare(greg, 50)
-#        greg.end_fill()
-#    if corner == 2:
-#        greg.forward(50)
-#        greg.begin_fill()
-#        drawSquare(greg, 50)
-#        greg.end_fill()
-#    if corner == 3:
-#        greg.forward(100)
-#        greg.right(90)
-#        greg.forward(50)
-#        greg.begin_fill()
-#        drawSquare(greg, 50)
-#        greg.end_fill()
-#    if corner == 4:
-#        greg.right(90)
-#        greg.forward(50)
-#        greg.left(90)
-#        greg.begin_fill()
-#        drawSquare(greg, 50)
-#        greg.end_fill()
+def fillCorner(greg, corner):
+    drawSquare(greg, 100)
+    if corner == 1:
+        greg.begin_fill()
+        drawSquare(greg, 50)
+        greg.end_fill()
+    if corner == 2:
+        greg.forward(50)
+        greg.begin_fill()
+        drawSquare(greg, 50)
+        greg.end_fill()
+    if corner == 3:
+        greg.forward(100)
+        greg.right(90)
+        greg.forward(50)
+        greg.begin_fill()
+        drawSquare(greg, 50)
+        greg.end_fill()
+    if corner == 4:
+        greg.right(90)
+        greg.forward(50)
+        greg.left(90)
+        greg.begin_fill()
+        drawSquare(greg, 50)
+        greg.end_fill()
 
-#def squaresInSquares (bob, num):
- #   bob.penup()
-  #  bob.goto(-50, 50)
-   # bob.pendown()
-    #drawSquare(bob, 100)
-    #if num > 0:
-     #   up = 25
-      #  left = -25
-       # square = 50
-       # for n in range(num-1):
-        #    bob.penup()
-         #   bob.goto(-50 + left, 50 + up)
-          #  bob.pendown()
-           # drawSquare(bob, 100 + square)
-           # up = up + 25
-           # left = left - 25
-           # square = square + 50
+def squaresInSquares (bob, num):
+    bob.penup()
+    bob.goto(-50, 50)
+    bob.pendown()
+    drawSquare(bob, 100)
+    if num > 0:
+        up = 25
+        left = -25
+        square = 50
+        for n in range(num-1):
+            bob.penup()
+            bob.goto(-50 + left, 50 + up)
+            bob.pendown()
+            drawSquare(bob, 100 + square)
+            up = up + 25
+            left = left - 25
+            square = square + 50
             
     
 def main():
